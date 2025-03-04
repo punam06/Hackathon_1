@@ -8,56 +8,86 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient matching logo colors */
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .login-container {
     background-color: white;
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 350px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 450px;
     text-align: center;
 }
 
-h1 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 1rem;
+.login-header {
+    margin-bottom: 2rem;
 }
 
-h1 span {
-    color: #28a745; /* Green theme */
+.login-header .logo {
+    width: 120px;
+    margin-bottom: 1.5rem;
+}
+
+.login-header h1 {
+    font-size: 2.2rem;
+    color: #1e3c72; /* Dark blue from logo */
+    margin-bottom: 0.5rem;
+}
+
+.login-header h1 span {
+    color: #2a5298; /* Lighter blue from logo */
+}
+
+.login-header p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
 }
 
 h2 {
-    font-size: 1.2rem;
-    color: #FFD700; /* Golden theme */
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: #2a5298; /* Lighter blue from logo */
+    margin-bottom: 1.5rem;
 }
 
 .input-group {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     text-align: left;
 }
 
-label {
+.input-group label {
     display: block;
     margin-bottom: 0.5rem;
     color: #555;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
-input {
+.input-group label i {
+    margin-right: 0.5rem;
+    color: #1e3c72; /* Dark blue from logo */
+}
+
+.input-group input {
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.75rem;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #1e3c72; /* Dark blue from logo */
+    outline: none;
 }
 
 button {
     width: 100%;
     padding: 0.75rem;
-    background-color: #28a745; /* Green theme */
+    background-color: #1e3c72; /* Dark blue from logo */
     color: white;
     border: none;
     border-radius: 5px;
@@ -67,33 +97,79 @@ button {
 }
 
 button:hover {
-    background-color: #218838; /* Darker green on hover */
+    background-color: #2a5298; /* Lighter blue from logo */
 }
 
-p {
-    margin-top: 1rem;
+.login-footer {
+    margin-top: 1.5rem;
+}
+
+.login-footer p {
     color: #555;
+    font-size: 1rem;
 }
 
-a {
-    color: #FFD700; /* Golden theme */
+.login-footer a {
+    color: #2a5298; /* Lighter blue from logo */
     text-decoration: none;
+    font-weight: 500;
 }
 
-a:hover {
+.login-footer a:hover {
     text-decoration: underline;
 }
 
-/* Additional Golden Accents */
-.login-container {
-    border: 2px solid #FFD700; /* Golden border */
-}
-
 button.secondary {
-    background-color: #FFD700; /* Golden button */
-    color: #333;
+    background-color: #2a5298; /* Lighter blue from logo */
+    color: white;
+    margin-top: 1rem;
 }
 
 button.secondary:hover {
-    background-color: #e6b800; /* Darker golden on hover */
+    background-color: #1e3c72; /* Dark blue from logo */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: linear-gradient(135deg, #0a1a3d, #12264f); /* Darker gradient */
+    color: #f4f4f4;
+}
+
+body.dark-mode .login-container {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode label,
+body.dark-mode p {
+    color: #f4f4f4;
+}
+
+body.dark-mode input {
+    background-color: #444;
+    border-color: #555;
+    color: #f4f4f4;
+}
+
+body.dark-mode button {
+    background-color: #12264f;
+}
+
+body.dark-mode button.secondary {
+    background-color: #1e3c72;
+}
+
+/* Mode Toggle */
+.mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.mode-toggle i {
+    font-size: 1.5rem;
+    color: #1e3c72; /* Dark blue from logo */
 }
