@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+h1 span {
+    color: #28a745; /* Green theme */
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #FFD700; /* Golden theme */
+    margin-bottom: 1rem;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #28a745; /* Green theme */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+p {
+    margin-top: 1rem;
+    color: #555;
+}
+
+a {
+    color: #FFD700; /* Golden theme */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Additional Golden Accents */
+.login-container {
+    border: 2px solid #FFD700; /* Golden border */
+}
+
+button.secondary {
+    background-color: #FFD700; /* Golden button */
+    color: #333;
+}
+
+button.secondary:hover {
+    background-color: #e6b800; /* Darker golden on hover */
+}
