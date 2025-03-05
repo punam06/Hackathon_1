@@ -1,0 +1,104 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Error &amp; Fallback Pages</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#16BC88" data-border-radius="medium"></script>
+</head>
+<body class="min-h-screen bg-gray-900 flex flex-col">
+    <nav class="bg-gray-800 border-b border-gray-700">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img class="h-8 w-auto" src="https://ai-public.creatie.ai/gen_page/logo_placeholder.png" alt="Logo"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="flex-grow flex flex-col">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full flex-grow flex flex-col items-center justify-center text-center">
+            <div class="space-y-12 w-full">
+                <div class="error-page space-y-8">
+                    <div class="flex flex-col items-center space-y-6">
+                        <img src="https://creatie.ai/ai/api/search-image?query=A 3D vector-style image of a friendly robot with a confused expression, set against a clean white background. The robot should have rounded edges and a modern, minimalist design with subtle details that match the website's aesthetic. The overall composition should convey a helpful and approachable feeling while maintaining professional polish.&width=400&height=400&orientation=squarish&removebg=true&flag=9335b8d8-492a-4257-8886-c26ba246b26e&flag=74e1c03a-b4c1-43bd-83db-01b85f1d2c79" alt="Error illustration" class="w-64 h-64 object-contain"/>
+                        <h1 class="text-4xl font-bold text-white">Oops! Something went wrong</h1>
+                        <p class="text-xl text-gray-300 max-w-2xl">We&#39;re experiencing some technical difficulties. Don&#39;t worry, it&#39;s not you - it&#39;s us!</p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-6">
+                        <button class="!rounded-button bg-custom text-white px-8 py-3 text-lg font-semibold hover:bg-custom/90 transition-colors">
+                            <i class="fas fa-redo mr-2"></i>Try Again
+                        </button>
+                        
+                        <a href="#" class="text-custom hover:text-custom/90 font-medium text-gray-300">
+                            <i class="fas fa-home mr-2"></i>Return to Homepage
+                        </a>
+                    </div>
+                    <div class="border-t border-gray-700 pt-8">
+                        <div class="flex flex-col items-center space-y-4">
+                            <h2 class="text-lg font-semibold text-white">Need help?</h2>
+                            <div class="flex items-center space-x-6">
+                                <a href="#" class="text-gray-300 hover:text-custom flex items-center">
+                                    <i class="fas fa-envelope mr-2"></i>
+                                    Contact Support
+                                </a>
+                                <a href="#" class="text-gray-300 hover:text-custom flex items-center">
+                                    <i class="fas fa-book mr-2"></i>
+                                    Visit Help Center
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="empty-state space-y-8 hidden">
+                    <div class="flex flex-col items-center space-y-6">
+                        <img src="https://creatie.ai/ai/api/search-image?query=A 3D vector-style image of an empty box or container with a magnifying glass nearby, set against a clean white background. The design should be modern and minimalist with soft shadows and subtle details that align with the website's design language. The composition should suggest a search or exploration theme.&width=400&height=400&orientation=squarish&removebg=true&flag=658b6cb6-ec1c-4922-9229-6f35e7fd3ca3&flag=88c2fc18-3d36-476d-a42c-4e2ca1c080bb" alt="Empty state illustration" class="w-64 h-64 object-contain"/>
+                        <h1 class="text-4xl font-bold text-white">No Results Found</h1>
+                        <p class="text-xl text-gray-300 max-w-2xl">We couldn&#39;t find what you&#39;re looking for. Try adjusting your search or exploring our suggestions below.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-700 hover:border-custom transition-colors">
+                            <i class="fas fa-compass text-3xl text-custom mb-4"></i>
+                            <h3 class="text-lg font-semibold text-white mb-2">Explore Categories</h3>
+                            <p class="text-gray-300">Browse through our curated collections</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-700 hover:border-custom transition-colors">
+                            <i class="fas fa-star text-3xl text-custom mb-4"></i>
+                            <h3 class="text-lg font-semibold text-white mb-2">Popular Items</h3>
+                            <p class="text-gray-300">Check out what others are viewing</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-700 hover:border-custom transition-colors">
+                            <i class="fas fa-lightbulb text-3xl text-custom mb-4"></i>
+                            <h3 class="text-lg font-semibold text-white mb-2">Get Suggestions</h3>
+                            <p class="text-gray-300">Let us help you find what you need</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-800 border-t border-gray-700">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="py-4 text-center text-sm text-gray-400">
+                © 2024 Your Company. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleView() {
+            const errorPage = document.querySelector('.error-page');
+            const emptyState = document.querySelector('.empty-state');
+            
+            if (errorPage.classList.contains('hidden')) {
+                errorPage.classList.remove('hidden');
+                emptyState.classList.add('hidden');
+            } else {
+                errorPage.classList.add('hidden');
+                emptyState.classList.remove('hidden');
+            }
+        }
+    </script>
