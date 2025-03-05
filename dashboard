@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>University Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#16BC88" data-border-radius="medium"></script>
+</head>
+<body class="min-h-screen bg-gray-900 text-white font-[&#39;Inter&#39;]">
+    <div class="flex min-h-screen">
+        <div class="hidden">
+            <img src="https://creatie.ai/ai/api/search-image?query=A modern minimalist 3D illustration of forgot password concept with lock and key elements, email symbol, and secure reset visualization on a dark background&width=800&height=1024&orientation=portrait&removebg=true&flag=29de44a9-cc36-4f75-9e98-09c719f09f84&flag=b06db225-54c3-4615-a39a-b21842d6f337" alt="Login illustration" class="object-cover w-full h-full opacity-90"/>
+        </div>
+        <div class="w-full flex flex-col min-h-screen bg-gray-900">
+            <div class="w-full p-6">
+                <div class="text-center mb-8"><div class="flex justify-between items-center mb-8"><h2 class="text-2xl font-semibold text-white">Welcome back, Alex!</h2><div class="flex items-center gap-4"><button class="p-2 rounded-lg bg-gray-700 hover:bg-gray-600"><i class="fas fa-bell text-white"><span class="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span></i></button><button class="p-2 rounded-lg bg-gray-700 hover:bg-gray-600"><i class="fas fa-moon text-white"></i></button></div></div><div class="w-full max-w-4xl mx-auto mb-6"><div class="relative"><input type="search" placeholder="Search for services, events, or schedules..." class="w-full pl-12 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white"/><i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i></div></div></div>
+                <form class="space-y-6"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><div class="p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-all"><i class="fas fa-utensils text-3xl text-custom mb-4"></i><h3 class="text-lg font-semibold mb-2">Cafeteria</h3><p class="text-gray-400">Today&#39;s menu and meal plans</p></div><div class="p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-all"><i class="fas fa-bus text-3xl text-custom mb-4"></i><h3 class="text-lg font-semibold mb-2">Bus Schedule</h3><p class="text-gray-400">Real-time shuttle tracking</p></div><div class="p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-all"><i class="fas fa-calendar text-3xl text-custom mb-4"></i><h3 class="text-lg font-semibold mb-2">Class Schedule</h3><p class="text-gray-400">Your daily class timeline</p></div><div class="p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-all"><i class="fas fa-map-marker-alt text-3xl text-custom mb-4"></i><h3 class="text-lg font-semibold mb-2">AR Navigation</h3><p class="text-gray-400">Campus navigation made easy</p></div><div class="p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-all"><i class="fas fa-users text-3xl text-custom mb-4"></i><h3 class="text-lg font-semibold mb-2">Clubs &amp; Events</h3><p class="text-gray-400">Manage your activities</p></div><div class="p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-all"><i class="fas fa-bell text-3xl text-custom mb-4"></i><h3 class="text-lg font-semibold mb-2">Notifications</h3><p class="text-gray-400">Recent updates and alerts</p></div></div></form>
+            </div>
+        </div>
+    <div class="fixed bottom-4 right-4"><button class="p-4 bg-custom rounded-full shadow-lg hover:bg-custom/90"><i class="fas fa-robot text-white"></i></button></div></div>
