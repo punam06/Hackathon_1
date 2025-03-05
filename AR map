@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Campus Navigation &amp; AR Map</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#16BC88" data-border-radius="medium"></script>
+</head>
+<body class="bg-gray-50 font-[&#39;Inter&#39;]">
+    <div class="min-h-screen flex flex-col">
+        <nav class="bg-white shadow-sm">
+            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                    <div class="flex items-center">
+                        <img src="https://ai-public.creatie.ai/gen_page/logo_placeholder.png" alt="Logo" class="h-8 w-auto"/>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <button class="!rounded-button text-red-600 bg-red-50 hover:bg-red-100 px-4 py-2 flex items-center">
+                            <i class="fas fa-exclamation-circle mr-2"></i>
+                            Emergency
+                        </button>
+                        <button class="text-gray-500 hover:text-gray-700">
+                            <i class="fas fa-cog text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="flex-grow container mx-auto px-4 py-8 max-w-8xl flex flex-col justify-center">
+            <div class="text-center mb-12 mt-8"><h1 class="text-4xl font-bold text-gray-900 mb-4">Campus Navigation &amp; AR Map</h1><p class="text-lg text-gray-600">Experience intuitive campus navigation with AR wayfinding</p></div>
+
+            
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mt-12 mb-12 justify-center items-center">
+                <button class="!rounded-button flex flex-col items-center justify-center p-8 bg-gray-200 text-gray-600 cursor-not-allowed shadow-lg transition-all duration-300">
+                    <i class="fas fa-camera text-4xl mb-4"></i>
+                    <span class="text-xl font-semibold">AR Wayfinding</span>
+                    <span class="text-sm mt-2">Coming soon</span>
+                </button>
+                <button class="!rounded-button flex flex-col items-center justify-center p-8 bg-gray-100 border-2 border-gray-300 text-gray-600 cursor-not-allowed shadow-lg transition-all duration-300">
+                    <i class="fas fa-map text-4xl mb-4"></i>
+                    <span class="text-xl font-semibold">Interactive Map</span>
+                    <span class="text-sm mt-2">Coming soon</span>
+                </button>
+            </div>
+
+            
+
+            
+        </main>
+
+        <footer class="bg-white border-t border-gray-200">
+            <div class="max-w-8xl mx-auto px-4 py-6">
+                <div class="flex justify-between items-center">
+                    <div class="flex space-x-6">
+                        <button class="text-gray-600 hover:text-custom">
+                            <i class="fas fa-comment-alt mr-2"></i>
+                            Feedback
+                        </button>
+                        <button class="text-gray-600 hover:text-custom">
+                            <i class="fas fa-universal-access mr-2"></i>
+                            Accessibility
+                        </button>
+                    </div>
+                    <div class="flex space-x-6">
+                        <button class="text-gray-600 hover:text-custom">
+                            <i class="fas fa-globe mr-2"></i>
+                            Language
+                        </button>
+                        <button class="text-gray-600 hover:text-custom">
+                            <i class="fas fa-question-circle mr-2"></i>
+                            Help
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+</body></html>
