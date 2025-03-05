@@ -1,17 +1,139 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>University Dashboard</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet"/>
-    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
-    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#16BC88" data-border-radius="medium"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Events & Clubs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet">    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#16BC88" data-border-radius='medium'></script>
 </head>
-<body class="min-h-screen bg-gray-900 text-white font-[&#39;Inter&#39;]">
-    <div class="flex min-h-screen">
-        <div class="hidden">
-            <img src="https://creatie.ai/ai/api/search-image?query=A modern minimalist 3D illustration of forgot password concept with lock and key elements, email symbol, and secure reset visualization on a dark background&width=800&height=1024&orientation=portrait&removebg=true&flag=29de44a9-cc36-4f75-9e98-09c719f09f84&flag=b06db225-54c3-4615-a39a-b21842d6f337&flag=d63d3110-ea96-4819-9a44-49bf160184dc&flag=9de3be71-217c-4ce1-9548-be64fdb711ce&flag=daeb6c30-119d-48b1-a978-2685c5b0e608&flag=8319e3ef-40a8-4195-be84-fef19e892067&flag=f28ae8e8-f3cd-46a5-8b62-71e23da5123d&flag=42a2ce55-b135-4d8b-b358-8bd396b070da&flag=68282028-181a-4965-879a-f87cb954ee0e&flag=8a49cbba-4c2b-4e38-870f-abbf6137ccdb&flag=e1bee71e-bd1c-4b7c-bb96-5d363c95d5d7&flag=4746ca12-ee7d-4bd2-b076-023b95f5bb24" alt="Login illustration" class="object-cover w-full h-full opacity-90"/>
+<body class="bg-gray-900 text-white min-h-screen">
+    <div class="max-w-8xl mx-auto px-4 py-6">
+        <header class="flex items-center justify-between mb-8">            <div class="flex items-center gap-4">
+                <button class="text-gray-400 hover:text-white">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <h1 class="text-xl font-semibold">Events & Clubs</h1>
+            </div>
+            <div class="flex items-center gap-4">                <button class="p-2 rounded-lg bg-gray-800 hover:bg-gray-700">
+                    <i class="fas fa-sync-alt"></i>                </button>
+                <button class="p-2 rounded-lg bg-gray-800 hover:bg-gray-700">
+                    <i class="fas fa-bell"></i>
+                </button>
+                <button class="p-2 rounded-lg bg-gray-800 hover:bg-gray-700">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </header>
+
+        <nav class="flex gap-4 mb-8">
+            <button class="px-6 py-2 rounded-lg bg-custom text-white font-medium !rounded-button">All Events</button>
+            <button class="px-6 py-2 rounded-lg bg-gray-800 text-gray-400 hover:bg-gray-700 font-medium !rounded-button">My Events</button>
+            <button class="px-6 py-2 rounded-lg bg-gray-800 text-gray-400 hover:bg-gray-700 font-medium !rounded-button">Clubs</button>
+            <button class="px-6 py-2 rounded-lg bg-gray-800 text-gray-400 hover:bg-gray-700 font-medium !rounded-button">Calendar</button>
+        </nav>
+
+        <section class="bg-gray-800/50 rounded-xl p-6 mb-8">
+            <div class="flex items-center justify-between mb-6">                <h2 class="text-lg font-semibold">Event Calendar</h2>
+                <div class="flex gap-3">
+                    <span class="px-4 py-1 rounded-lg bg-blue-500/20 text-blue-400 text-sm">Social Events</span>
+                    <span class="px-4 py-1 rounded-lg bg-custom/20 text-custom text-sm">Academic</span>
+                    <span class="px-4 py-1 rounded-lg bg-purple-500/20 text-purple-400 text-sm">Club Meetings</span>
+                </div>
+            </div>
+            <div class="grid grid-cols-7 gap-4 text-center">
+                <div class="text-gray-400">Mon</div>
+                <div class="text-gray-400">Tue</div>
+                <div class="text-gray-400">Wed</div>
+                <div class="text-gray-400">Thu</div>
+                <div class="text-gray-400">Fri</div>
+                <div class="text-gray-400">Sat</div>
+                <div class="text-gray-400">Sun</div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-2 gap-6">
+            <div class="bg-gray-800/50 rounded-xl p-6">                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-lg font-semibold">Photography Club Meetup</h3>                    <span class="px-4 py-1 rounded-lg bg-blue-500 text-white text-sm">Open for RSVP</span>
+                </div>                <div class="space-y-4 mb-6">
+                    <div class="flex justify-between">
+                        <span class="text-gray-400">Date:</span>
+                        <span>March 15, 2024</span>
+                    </div>
+                    <div class="flex justify-between">                        <span class="text-gray-400">Location:</span>
+                        <span>Art Center</span>
+                    </div>                    <div class="flex justify-between">
+                        <span class="text-gray-400">Organizer:</span>
+                        <span>Emma Thompson</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-400">Spots:</span>
+                        <span>15/30</span>
+                    </div>
+                </div>
+                <button class="w-full py-3 bg-custom text-white rounded-lg font-medium !rounded-button">RSVP Now</button>
+            </div>
+
+            <div class="bg-gray-800/50 rounded-xl p-6">
+                <div class="flex items-center justify-between mb-6">                    <h3 class="text-lg font-semibold">Debate Club Finals</h3>
+                    <span class="px-4 py-1 rounded-lg bg-custom text-white text-sm">Coming Soon</span>
+                </div>
+                <div class="space-y-4 mb-6">
+                    <div class="flex justify-between">                        <span class="text-gray-400">Time:</span>
+                        <span>March 20, 2024</span>
+                    </div>                    <div class="flex justify-between">
+                        <span class="text-gray-400">Room:</span>
+                        <span>Main Auditorium</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-400">Faculty:</span>
+                        <span>Debate Society</span>
+                    </div>
+                    <div class="flex justify-between">                        <span class="text-gray-400">Type:</span>
+                        <span>Free Entry</span>
+                    </div>                </div>
+                <button class="w-full py-3 bg-custom text-white rounded-lg font-medium !rounded-button">View Details</button>            </div>
+
+            <div class="bg-gray-800/50 rounded-xl p-6">
+                <div class="flex items-center justify-between mb-6">                    <h3 class="text-lg font-semibold">Tech Innovation Fair</h3>
+                    <span class="px-4 py-1 rounded-lg bg-purple-500 text-white text-sm">Registration Open</span>
+                </div>
+                <div class="space-y-4 mb-6">
+                    <div class="flex justify-between">                        <span class="text-gray-400">Time:</span>
+                        <span>April 5, 2024</span>
+                    </div>                    <div class="flex justify-between">
+                        <span class="text-gray-400">Lab:</span>
+                        <span>Engineering Block</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-400">Faculty:</span>
+                        <span>Tech Club</span>
+                    </div>
+                    <div class="flex justify-between">                        <span class="text-gray-400">Type:</span>
+                        <span>Exhibition</span>
+                    </div>                </div>
+                <button class="w-full py-3 bg-custom text-white rounded-lg font-medium !rounded-button">View Details</button>            </div>
+
+            <div class="bg-gray-800/50 rounded-xl p-6">
+                <div class="flex items-center justify-between mb-6">                    <h3 class="text-lg font-semibold">Music Club Performance</h3>
+                    <span class="px-4 py-1 rounded-lg bg-yellow-500 text-white text-sm">Tickets Available</span>
+                </div>
+                <div class="space-y-4 mb-6">
+                    <div class="flex justify-between">                        <span class="text-gray-400">Time:</span>
+                        <span>March 25, 2024</span>
+                    </div>                    <div class="flex justify-between">
+                        <span class="text-gray-400">Room:</span>
+                        <span>Student Center</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-400">Faculty:</span>
+                        <span>Music Club</span>
+                    </div>
+                    <div class="flex justify-between">                        <span class="text-gray-400">Type:</span>
+                        <span>Concert</span>
+                    </div>                </div>
+                <button class="w-full py-3 bg-custom text-white rounded-lg font-medium !rounded-button">View Details</button>            </div>
         </div>
-        <div class="w-full flex flex-col min-h-screen bg-gray-900"><div class="w-full p-6"><div class="flex justify-between items-center mb-8"><div class="flex items-center gap-4"><button class="p-2 rounded-lg bg-gray-800 hover:bg-gray-700"><i class="fas fa-arrow-left text-white"></i></button><h2 class="text-2xl font-semibold text-white">Events &amp; Clubs</h2></div><div class="flex items-center gap-4"><button class="p-2 rounded-lg bg-gray-700 hover:bg-gray-600"><i class="fas fa-refresh text-white"></i></button><button class="p-2 rounded-lg bg-gray-700 hover:bg-gray-600"><i class="fas fa-bell text-white"></i></button><button class="p-2 rounded-lg bg-gray-700 hover:bg-gray-600"><i class="fas fa-moon text-white"></i></button></div></div><div class="w-full mx-auto px-4"><div class="flex gap-4 mb-6"><button class="px-4 py-2 bg-custom rounded-lg">All Events</button><button class="px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded-lg">My Events</button><button class="px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded-lg">Clubs</button><button class="px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded-lg">Calendar</button></div><div class="w-full"><div class="w-full bg-gray-800 rounded-xl p-6 mb-6"><div id="map" class="w-full h-[400px] rounded-lg bg-gray-700 mb-4"><div class="flex items-center justify-center h-full text-gray-400"><div class="w-full h-full bg-gray-700 rounded-lg p-6"><div class="flex justify-between items-center mb-6"><h3 class="text-xl font-semibold">Event Calendar</h3><div class="flex gap-2"><span class="px-2 py-1 bg-blue-500/20 text-blue-400 rounded">Social Events</span><span class="px-2 py-1 bg-green-500/20 text-green-400 rounded">Academic</span><span class="px-2 py-1 bg-purple-500/20 text-purple-400 rounded">Club Meetings</span></div></div><div class="grid grid-cols-7 gap-4"><div class="text-center p-2">Mon</div><div class="text-center p-2">Tue</div><div class="text-center p-2">Wed</div><div class="text-center p-2">Thu</div><div class="text-center p-2">Fri</div><div class="text-center p-2">Sat</div><div class="text-center p-2">Sun</div></div></div></div></div></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 w-full"><div class="p-6 bg-gray-800 rounded-xl w-full"><div class="flex justify-between items-center mb-4"><h3 class="text-lg font-semibold">Photography Club Meetup</h3><span class="px-3 py-1 bg-blue-500 text-white rounded-full text-sm">Open for RSVP</span></div><div class="space-y-3"><div class="flex justify-between text-gray-400"><span>Date:</span><span>March 15, 2024</span></div><div class="flex justify-between text-gray-400"><span>Location:</span><span>Art Center</span></div><div class="flex justify-between text-gray-400"><span>Organizer:</span><span>Emma Thompson</span></div><div class="flex justify-between text-gray-400"><span>Spots:</span><span>15/30</span></div><button class="w-full mt-4 py-2 bg-custom rounded-lg hover:bg-custom/90">RSVP Now</button></div></div><div class="p-6 bg-gray-800 rounded-xl w-full"><div class="flex justify-between items-center mb-4"><h3 class="text-lg font-semibold">Debate Club Finals</h3><span class="px-3 py-1 bg-green-500 text-white rounded-full text-sm">Coming Soon</span></div><div class="space-y-3"><div class="flex justify-between text-gray-400"><span>Time:</span><span>March 20, 2024</span></div><div class="flex justify-between text-gray-400"><span>Room:</span><span>Main Auditorium</span></div><div class="flex justify-between text-gray-400"><span>Faculty:</span><span>Debate Society</span></div><div class="flex justify-between text-gray-400"><span>Type:</span><span>Free Entry</span></div><button class="w-full mt-4 py-2 bg-custom rounded-lg hover:bg-custom/90">View Details</button></div></div><div class="p-6 bg-gray-800 rounded-xl w-full"><div class="flex justify-between items-center mb-4"><h3 class="text-lg font-semibold">Tech Innovation Fair</h3><span class="px-3 py-1 bg-purple-500 text-white rounded-full text-sm">Registration Open</span></div><div class="space-y-3"><div class="flex justify-between text-gray-400"><span>Time:</span><span>April 5, 2024</span></div><div class="flex justify-between text-gray-400"><span>Lab:</span><span>Engineering Block</span></div><div class="flex justify-between text-gray-400"><span>Faculty:</span><span>Tech Club</span></div><div class="flex justify-between text-gray-400"><span>Type:</span><span>Exhibition</span></div><button class="w-full mt-4 py-2 bg-custom rounded-lg hover:bg-custom/90">View Details</button></div></div><div class="p-6 bg-gray-800 rounded-xl w-full"><div class="flex justify-between items-center mb-4"><h3 class="text-lg font-semibold">Music Club Performance</h3><span class="px-3 py-1 bg-yellow-500 text-white rounded-full text-sm">Tickets Available</span></div><div class="space-y-3"><div class="flex justify-between text-gray-400"><span>Time:</span><span>March 25, 2024</span></div><div class="flex justify-between text-gray-400"><span>Room:</span><span>Student Center</span></div><div class="flex justify-between text-gray-400"><span>Faculty:</span><span>Music Club</span></div><div class="flex justify-between text-gray-400"><span>Type:</span><span>Concert</span></div><button class="w-full mt-4 py-2 bg-custom rounded-lg hover:bg-custom/90">View Details</button></div></div></div></div></div></div></div>
-    <div class="fixed bottom-4 right-4"><button class="p-4 bg-custom rounded-full shadow-lg hover:bg-custom/90"><i class="fas fa-robot text-white"></i></button></div></div>
+    </div>
+</body>
+</html>
